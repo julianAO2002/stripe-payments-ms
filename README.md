@@ -1,5 +1,8 @@
 # TP4 - Sesiones de pago y webhook Stripe
 
+Resolución del TP4 de **Programación Avanzada 2026** (Licenciatura en Sistemas de
+Información - FCyT, UADER). Consigna original: [`docs/consigna-TP4.pdf`](docs/consigna-TP4.pdf).
+
 Microservicio HTTP en NestJS que:
 
 1. **Crea sesiones de pago** (Stripe Checkout, `mode: payment`) a partir de un
@@ -20,7 +23,7 @@ NATS/TCP, reembolsos y modo live.
 ## Estructura
 
 ```
-payments-ms/
+stripe-payments-ms/
 ├── src/
 │   ├── config/
 │   │   ├── envs.ts                     # Valida el .env con joi (fail-fast)
@@ -32,6 +35,7 @@ payments-ms/
 │   │   └── payments.module.ts
 │   ├── app.module.ts
 │   └── main.ts                         # rawBody: true + ValidationPipe global
+├── docs/consigna-TP4.pdf               # Consigna del trabajo práctico
 ├── screenshots/                        # Capturas de las pruebas
 ├── .env.template                       # Copiar a .env
 ├── requests.http                       # Pedidos de prueba
